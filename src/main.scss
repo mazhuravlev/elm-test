@@ -1,0 +1,37 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+@import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    font-size: 72px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cell-ghost {
+    color: transparent;
+}
+
+.cell-ghost:hover {
+    color: gray;
+    transition: color .4s;
+}
+
+.cell-x::before {
+ content: "X";
+}
+
+.cell-o::before {
+    content: "O";
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 320px;
+}
