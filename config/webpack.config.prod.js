@@ -261,21 +261,23 @@ module.exports = {
       },
 
       {
-        exclude: [/\.html$/, /\.js$/, /\.elm$/, /\.css$/, /\.json$/, /\.svg$/],
+        exclude: [/\.html$/, /\.js$/, /\.elm$/, /\.css$/, /\.json$/, /\.svg$/, /\.sc?ss$/],
         loader: require.resolve('url-loader'),
         options: {
           limit: 10000,
           name: 'static/media/[name].[hash:8].[ext]'
         }
       },
-      // "file" loader for svg
+
       {
-        test: /\.svg$/,
-        loader: require.resolve('file-loader'),
-        options: {
-          name: 'static/media/[name].[hash:8].[ext]'
-        }
-      }
+        test: /\.(eot|ttf|woff|woff2|svg)$/,
+        use: 'file-loader?publicPath=../../&name=static/css/[hash].[ext]'
+      },
+
+      {
+        test: /\.sc?ss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      }, 
     ]
   },
   plugins: [
