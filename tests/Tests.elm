@@ -1,22 +1,39 @@
 module Tests exposing (..)
 
 import Test exposing (..)
+import Ttt exposing (checkWin)
 import Expect
 
 
+
 -- Check out http://package.elm-lang.org/packages/elm-community/elm-test/latest to learn more about testing in Elm!
+
+winMatrix = [ 
+         [1, 1, 1, 0, 0, 0, 0, 0, 0]
+        ,[0, 0, 0, 1, 1, 1, 0, 0, 0]
+        ,[0, 0, 0, 0, 0, 0, 1, 1, 1]
+        ,[1, 0, 0, 1, 0, 0, 1, 0, 0]
+        ,[0, 1, 0, 0, 1, 0, 0, 1, 0]
+        ,[0, 0, 1, 0, 0, 1, 0, 0, 1]
+        ,[1, 0, 0, 0, 1, 0, 0, 0, 1]
+        ,[0, 0, 1, 0, 1, 0, 1, 0, 0]
+        ]
+
+loseMatrix = [ 
+         [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        ,[1, 0, 0, 0, 0, 0, 0, 0, 0]
+        ,[0, 1, 0, 0, 0, 0, 0, 0, 1]
+        ,[0, 0, 0, 1, 0, 0, 1, 0, 0]
+        ]
 
 
 all : Test
 all =
     describe "A Test Suite"
-        [ test "Addition" <|
+        [ test "Wins" <|
             \_ ->
-                Expect.equal 10 (3 + 7)
-        , test "String.left" <|
+                Expect.equal True (winMatrix |> List.map checkWin |> List.all (\x -> x))
+        , test "Loses" <|
             \_ ->
-                Expect.equal "a" (String.left 1 "abcdefg")
-        , test "This test should fail" <|
-            \_ ->
-                Expect.fail "failed as expected!"
+                Expect.equal False (loseMatrix |> List.map checkWin |> List.any (\x -> x))
         ]
