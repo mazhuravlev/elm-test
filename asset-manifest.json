@@ -1,14 +1,14 @@
 {
-  "main.js": "/static/js/main.ffd309ed.chunk.js",
-  "main.js.map": "/static/js/main.ffd309ed.chunk.js.map",
-  "vendors~main.js": "/static/js/vendors~main.57741cb8.chunk.js",
-  "vendors~main.js.map": "/static/js/vendors~main.57741cb8.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/glyphicons-halflings-regular.eot": "/static/css/f4769f9bdb7466be65088239c12046d1.eot",
-  "static/css/glyphicons-halflings-regular.woff": "/static/css/fa2772327f55d8198301fdb8bcfc8158.woff",
-  "static/css/glyphicons-halflings-regular.ttf": "/static/css/e18bbf611f2a2e43afc071aa2f4e1512.ttf",
-  "static/css/glyphicons-halflings-regular.svg": "/static/css/89889688147bd7575d6327160d64e760.svg",
-  "static/css/glyphicons-halflings-regular.woff2": "/static/css/448c34a56d699c29117adc64c43affeb.woff2",
-  "index.html": "/index.html"
+  "main.js": "/elm-test/static/js/main.99c1c7b0.chunk.js",
+  "main.js.map": "/elm-test/static/js/main.99c1c7b0.chunk.js.map",
+  "vendors~main.js": "/elm-test/static/js/vendors~main.57741cb8.chunk.js",
+  "vendors~main.js.map": "/elm-test/static/js/vendors~main.57741cb8.chunk.js.map",
+  "runtime~main.js": "/elm-test/static/js/runtime~main.e2a958e3.js",
+  "runtime~main.js.map": "/elm-test/static/js/runtime~main.e2a958e3.js.map",
+  "static/css/glyphicons-halflings-regular.eot": "/elm-test/static/css/f4769f9bdb7466be65088239c12046d1.eot",
+  "static/css/glyphicons-halflings-regular.woff": "/elm-test/static/css/fa2772327f55d8198301fdb8bcfc8158.woff",
+  "static/css/glyphicons-halflings-regular.ttf": "/elm-test/static/css/e18bbf611f2a2e43afc071aa2f4e1512.ttf",
+  "static/css/glyphicons-halflings-regular.svg": "/elm-test/static/css/89889688147bd7575d6327160d64e760.svg",
+  "static/css/glyphicons-halflings-regular.woff2": "/elm-test/static/css/448c34a56d699c29117adc64c43affeb.woff2",
+  "index.html": "/elm-test/index.html"
 }
